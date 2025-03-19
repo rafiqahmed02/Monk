@@ -1,0 +1,91 @@
+.event-form-wrapper {
+  width: 100%;
+  /* padding: 20px; */
+  box-sizing: border-box;
+}
+.event-images-container {
+  width: 100%;
+  /* height: 180px; */
+  border-radius: 30px;
+  /* background-color: #e4fff1; */
+}
+
+.event-info-container {
+  margin: 20px;
+}
+.inputField,
+.radio-group,
+.registrationCheckbox,
+.readOnlyField {
+  margin-bottom: 20px;
+}
+
+.readOnlyField {
+  margin-top: 20px;
+}
+.readOnlyField .readOnlyValues {
+  white-space: pre;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  color: #838383;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.inputField label,
+.readOnlyField label {
+  display: block;
+  /* color: #838383; */
+  font-family: Lato;
+  margin-bottom: 10px;
+}
+.event-form-wrapper label:not(.registrationCheckbox__disabled) {
+  color: #838383;
+  font-family: Lato;
+  font-weight: bold;
+}
+.inputField input,
+.inputField textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 18px;
+  transition: border-color 0.3s ease;
+  resize: none;
+}
+.addressCheckbox {
+  margin-top: 15px;
+}
+.registrationCheckbox {
+  display: flex;
+  align-items: center;
+}
+.registrationCheckbox__disabled label {
+  color: #b0b0b0 !important;
+}
+/* .inputField .selectInput{
+    width: "100%";
+    border-radius: "20px";
+
+
+} */
+.event-form-wrapper {
+  font-size: 0.85rem !important;
+}
+
+.next-button-container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+.event-calendar {
+  max-width: 400px;
+}
+.errorBorder {
+  border: 1px solid red !important;
+}
+.error-bdr {
+  border: 1px solid #ee0000 !important;
+}

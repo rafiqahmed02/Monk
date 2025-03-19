@@ -1,0 +1,104 @@
+.tvCardContainer {
+  /* Container styles */
+  width: 300px; /* Adjust as needed */
+  font-family: sans-serif;
+  margin: 16px auto;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.editIcon {
+  position: absolute;
+  right: 14px;
+  width: 15px;
+  height: 15px;
+}
+
+.deviceName {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  width: 85%;
+  margin: 10px 0;
+}
+
+.cardImage {
+  width: 120px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.cardDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.cardTitle {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}
+
+.cardSubtitle {
+  font-size: 0.8rem;
+  color: #777;
+  margin: 0 0 8px 0;
+  text-align: left;
+}
+
+.statusContainer {
+  display: flex;
+  align-items: center;
+}
+
+.statusDot {
+  width: 8px;
+  height: 8px;
+  background-color: #28a745; /* Green for 'Active' */
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.statusText {
+  font-size: 0.8rem;
+  color: #28a745;
+}
+
+@media (min-width: 564px) {
+  .tvCardContainer {
+    width: 400px;
+  }
+
+  .cardImage {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 12px;
+  }
+}

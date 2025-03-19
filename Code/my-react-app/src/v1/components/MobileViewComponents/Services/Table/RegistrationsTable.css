@@ -1,0 +1,35 @@
+.registrations-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: "Lato" !important;
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+.registration-table-header {
+  display: flex;
+  align-items: center;
+}
+.registration-table-header .page-title {
+  font-size: 12px;
+}
+.registrations-table .MuiTableCell-root {
+  border-bottom: none !important;
+  padding: 6px !important;
+  word-break: break-all;
+}
+.registrations-table * {
+  font-family: "Lato" !important;
+}
+.registration-table-box {
+  width: 100%;
+  margin: 0px 10px;
+}
+
+@media (min-width: 768px) {
+  .registration-table-box {
+    width: 50%;
+  }
+}

@@ -1,0 +1,113 @@
+.date-picker-container {
+  /* padding: 20px; */
+  max-width: 400px;
+  /* margin: auto; */
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+}
+.none-date-picker-container {
+  margin-bottom: 20px;
+}
+.none-date-picker-container .none-label {
+  margin-bottom: 10px;
+  display: block;
+}
+.recurrence-checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.recurrence-label {
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.recurrence-checkbox {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.mode-selection-container {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.mode-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.mode-select {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  cursor: pointer;
+}
+
+.range-date-picker-container,
+.random-date-picker-container {
+  margin-bottom: 15px;
+}
+
+.range-label,
+.random-label {
+  display: block;
+  /* font-weight: bold; */
+  margin-bottom: 10px;
+}
+.day-selection-label {
+  display: block;
+  margin-bottom: 20px;
+}
+.date-picker-wrapper {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.date-picker-wrapper > span {
+  width: 50%;
+}
+
+.arrow-icon {
+  cursor: pointer;
+}
+
+.calendar-icon-container {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.calendar-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.time-input-container {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.time-input-container .time-clock {
+  width: 50%;
+}
+
+.time-picker {
+  flex: 1;
+}
+.weekly-date-picker-container {
+  margin-bottom: 20px;
+}

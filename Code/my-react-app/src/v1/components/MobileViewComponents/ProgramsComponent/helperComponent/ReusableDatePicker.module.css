@@ -1,0 +1,37 @@
+.recurrenceField {
+  margin-bottom: 20px;
+}
+.recurrenceField label {
+  color: #838383;
+  font-family: Lato;
+  margin-bottom: 10px;
+}
+
+.inputField,
+.radio-group,
+.registrationCheckbox {
+  margin-bottom: 20px;
+}
+.inputField label {
+  display: block;
+  /* color: #838383; */
+  font-family: Lato;
+  margin-bottom: 10px;
+}
+
+.inputField input,
+.inputField textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 18px;
+  transition: border-color 0.3s ease;
+  resize: none;
+}
+.recurrenceTypeField {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  gap: 20px;
+}

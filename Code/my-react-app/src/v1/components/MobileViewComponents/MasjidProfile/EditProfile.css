@@ -1,0 +1,7 @@
+.address-tooltip-container .MuiTooltip-tooltip.MuiTooltip-touch {
+  font-size: 20px !important;
+}
+
+.editmasjid .tooltip-icon svg.MuiSvgIcon-root {
+  font-size: 10px !important;
+}

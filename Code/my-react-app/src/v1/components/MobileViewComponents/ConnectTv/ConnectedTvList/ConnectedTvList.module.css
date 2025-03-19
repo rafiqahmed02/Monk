@@ -1,0 +1,50 @@
+.tvList {
+  margin: 20px 0;
+}
+
+.tvItem {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.tvItem h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.tvItem p {
+  font-size: 14px;
+  color: #555;
+}
+
+.noTvConnected {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.noTvConnected p {
+  color: #3d544e;
+}
+
+.noConnectedimg {
+  width: 150px;
+  /* height: 100px; */
+}
+.tvListLoader {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notConnected {
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

@@ -1,0 +1,33 @@
+.event-form-card.MuiPaper-root {
+  background-color: white;
+  width: 100%;
+  border-radius: 20px;
+}
+.event-form-card.MuiPaper-root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+@media (min-width: 500px) {
+  .event-form-card.MuiPaper-root {
+    width: 70%;
+  }
+  @media (min-width: 640px) {
+    .event-form-card.MuiPaper-root {
+      width: 60%;
+    }
+  }
+  @media (min-width: 768px) {
+    .event-form-card.MuiPaper-root {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}

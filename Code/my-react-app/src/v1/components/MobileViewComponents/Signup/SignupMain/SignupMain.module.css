@@ -1,0 +1,41 @@
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.logo {
+  max-width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.adminPortal {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #f4a81f; /* Orange color for "Admin Portal" */
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.admin {
+  color: #1d785a; /* Green */
+}
+
+.portal {
+  color: #f4a81f; /* Orange */
+}
+
+.container input:-webkit-autofill {
+  background-color: white !important;
+  color: black !important;
+  box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    margin: 12px;
+  }
+}

@@ -1,0 +1,113 @@
+/* Login.module.css */
+.root {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "lato", sans-serif;
+}
+
+.formContainer {
+  max-width: 400px;
+  width: 100%;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 10px;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 0.6rem;
+}
+
+.title {
+  color: #ffc107; /* Yellow color for "Admin Portal" */
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.firstTitle {
+  color: #1d785a;
+}
+
+.secondTitle {
+  color: #ffb625; /* Green color for "Admin Portal" */
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  padding-left: 20px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  border: 1px solid #3d544e;
+  border-radius: 15px;
+  box-sizing: border-box;
+  background-color: #f7f9fb !important;
+}
+
+.passwordInput {
+  display: flex;
+  position: relative;
+}
+
+.ShowPasswordLogin {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: 18px;
+}
+
+.formContainer input:-webkit-autofill {
+  background-color: white !important;
+  color: black !important;
+  box-shadow: 0 0 0px 1000px #f7f9fb inset !important;
+}
+
+.loginButton {
+  width: 100%;
+  padding: 12px;
+  margin-top: 1rem;
+  background-color: #1b8368; /* Green color for button */
+  color: #fff;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.loginButton:hover {
+  background-color: #026a2e;
+}
+
+.linkContainer {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.link {
+  color: #1d785a;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.captchaText {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #1d785a;
+  margin: 0;
+  text-align: left;
+}

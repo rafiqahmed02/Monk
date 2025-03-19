@@ -1,0 +1,66 @@
+.chart {
+  width: 50%;
+  height: 150px;
+}
+
+.pieChart {
+  width: 100%;
+  height: 150px;
+}
+
+.option-items {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.option-items p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.dott {
+  width: 25px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.pietitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pieChart {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 568px) {
+  .pieChart {
+    width: 60%;
+  }
+}
+
+@media (min-width: 668px) {
+  .pieChart {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pieChart {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .chart {
+    height: 250px;
+  }
+
+  .pieChart {
+    height: 250px;
+  }
+}

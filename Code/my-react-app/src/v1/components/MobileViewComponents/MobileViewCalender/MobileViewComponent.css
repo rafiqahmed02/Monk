@@ -1,0 +1,152 @@
+.prayer-right-calender {
+  padding: 20px 0px;
+  margin: auto auto;
+  width: 94%;
+}
+.swiper-download-btn-conatiner {
+  background: white;
+  border-radius: 20px;
+}
+.MobileView .my-custom-btn,
+.btn-container .my-custom-btn,
+.submit-btn-container .my-custom-btn {
+  padding: 0px 30px 0px 30px !important;
+  margin: 10px auto;
+}
+
+.MobileView .MobileViewContainer {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  .MobileView .MobileViewContainer {
+    display: flex !important;
+  }
+  .mainprayerconatiner {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 85vh; */
+    flex-direction: column;
+  }
+
+  .mainprayerconatiner .MobileViewContainer {
+    width: 50%;
+  }
+
+  .MobileView-main-container {
+    width: 90%;
+    padding-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    background-color: #ffff;
+  }
+  .MobileView-main-container .page-title {
+    margin-bottom: -2px;
+    text-align: center;
+    width: 50%;
+  }
+  .MobileView .customly-added-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .MobileView .customly-added-btn div {
+    width: 60%;
+  }
+
+  .MobileView .react-calendar {
+    box-shadow: none;
+    background: #f2fff8;
+  }
+  .MobileView .react-calendar__tile {
+    font-weight: 500 !important;
+  }
+  .MobileView .react-calendar__tile:disabled {
+    /* color: #3d5347; */
+    
+    background-color: #f0f0f000 !important;
+  }
+  .MobileView .react-calendar__navigation {
+    border-bottom: none;
+  }
+  .prayer-right-calender {
+    padding: 0px 10px;
+    width: 50%;
+  }
+  .prayer-right-calender .prayer-box-card-container {
+    box-shadow: none !important;
+  }
+  .prayer-right-calender .PrayerTimings-box {
+    border-top: none;
+  }
+  .prayer-right-calender .PrayerTimings-box .no-prayer {
+    width: 100vw;
+  }
+  /* .prayer-right-calender .time-zone {
+    margin: auto 30px;
+  } */
+  /* .prayer-right-calender .PrayerTimings-box .Prayer-card-Tr td,
+  .prayer-right-calender .PrayerTimings-box .Prayer-card-header th,
+  .prayer-right-calender .PrayerTimings-box .Prayer-card-Tr th {
+    width: 15vw !important;
+    padding: 15px 0px 0px 0px;
+    text-align: center;
+  } */
+  .MobileView {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding-bottom: 40px;
+  }
+
+  .prayer-right-calender .time-zone {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .MobileView-main-container {
+    width: 75%;
+    padding-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    background-color: #ffff;
+  }
+  .mainprayerconatiner .MobileViewContainer {
+    width: 40%;
+    margin: 0 40px;
+  }
+
+  .prayer-right-calender .time-zone {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1700px) {
+  .react-calendar__month-view__days button {
+    height: 75px !important;
+  }
+
+  .CalendarContainer .react-calendar {
+    font-size: 25px;
+  }
+
+  .customly-added-btn div {
+    height: 50px !important;
+  }
+
+  .time-zone {
+    font-size: 30px;
+  }
+
+  .CalendarContainer .react-calendar .green-dot::after {
+    width: 10px !important;
+    height: 10px !important;
+
+    right: 22px;
+  }
+}

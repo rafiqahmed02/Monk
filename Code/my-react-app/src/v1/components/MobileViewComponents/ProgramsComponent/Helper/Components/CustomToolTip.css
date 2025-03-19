@@ -1,0 +1,7 @@
+.custom-tooltip .MuiTooltip-tooltip.MuiTooltip-touch {
+  font-size: 5px !important;
+}
+
+.custom-tooltip-container .MuiTooltip-tooltip {
+  font-size: 12px !important;
+}

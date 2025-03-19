@@ -1,0 +1,128 @@
+.program-main {
+  padding: 0px 10px;
+  position: relative;
+}
+.program-main-header {
+  display: flex;
+  align-items: center;
+  /* justify-content: center;
+    margin-bottom: 20px; */
+}
+.program-main__goback {
+  width: 100px;
+  position: absolute;
+  z-index: 1;
+  left: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .program-main__goback {
+    left: 15px;
+  }
+}
+.program-main-body-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.program-main-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.program-list-main {
+}
+.program-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: auto;
+  /* width: 50%; */
+}
+
+.no-program-loader-container {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.no-program-container__text {
+  text-align: center;
+  color: #3d5347;
+  font-size: 14px;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #d0f9e4 !important;
+  border-radius: 10px !important;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #1b8368 !important;
+  border-radius: 10px !important;
+}
+
+@media (min-width: 500px) {
+  .program-main-body {
+    width: 65%;
+  }
+}
+@media (min-width: 640px) {
+  .program-main-body {
+    width: 60%;
+  }
+}
+@media (min-width: 768px) {
+  .program-main-body {
+    width: 93%;
+    flex-direction: row-reverse;
+    padding: 30px;
+    background-color: white;
+    border-radius: 45px;
+  }
+  .calendar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+  .program-list-main {
+    height: 335px;
+    width: 50%;
+  }
+  .program-list-container {
+    height: 100%;
+    /* padding: 2px 4px; */
+    padding: 10px 20px;
+  }
+}
+
+input:-webkit-autofill {
+  background-color: white !important; /* or any other color */
+  color: black !important; /* Adjust text color if needed */
+  box-shadow: 0 0 0px 1000px white inset !important; /* Ensure background color fills the field */
+}
+
+@media (min-width: 1024px) {
+  .program-main-body-container {
+    margin: 50px 0;
+  }
+
+  .program-main-body {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program-main-body {
+    width: 60%;
+  }
+}

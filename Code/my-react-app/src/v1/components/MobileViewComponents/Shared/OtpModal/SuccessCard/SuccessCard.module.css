@@ -1,0 +1,87 @@
+.cardContainer {
+  position: relative;
+  max-width: 350px;
+  width: calc(100% - 20px);
+  margin: 10px;
+  padding: 40px;
+  background: #fff;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #9f9e9e;
+}
+
+.iconContainer {
+  margin-bottom: 10px;
+}
+
+.checkIcon {
+  width: 60px;
+  color: #1f6034;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #00a860;
+  margin: 0 0 10px 0;
+}
+
+.description {
+  font-size: 0.8rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.continueButton {
+  background-color: #1d785a;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.shareContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.shareIcon {
+  font-size: 0.8rem;
+}
+
+.shareContainer b {
+  color: #545454;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 350px) {
+  .cardContainer {
+    margin: 10px auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}

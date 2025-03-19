@@ -1,0 +1,132 @@
+.inputError {
+  border: 1px solid red !important;
+}
+
+.dropdownContainer {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.dropdownLabel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #666;
+  border-radius: 25px;
+  padding: 0 15px;
+  background-color: #fff;
+  font-size: 0.8rem;
+  cursor: pointer;
+  height: 45px;
+}
+
+.labelText {
+  position: absolute;
+  left: 15px;
+  top: 50%; /* Start at the center */
+  transform: translateY(-50%);
+  background-color: #fff;
+  padding: 0 5px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #666;
+  transition: top 0.3s ease, font-size 0.3s ease; /* Animate label movement and font size */
+  pointer-events: none; /* Let clicks pass through to underlying elements */
+}
+
+.active {
+  top: -10px; /* Move above the dropdown */
+  font-size: 0.75rem; /* Reduce font size slightly */
+  transform: translateY(0%); /* Reset transform for a stable position */
+}
+
+.dropdownIcon {
+  font-size: 0.8rem;
+  color: #545454;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  z-index: 10;
+  overflow: hidden;
+  transform-origin: top;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.dropdown.open {
+  max-height: 200px; /* Adjust based on content */
+  opacity: 1;
+}
+
+.dropdown.close {
+  max-height: 0;
+  opacity: 0;
+}
+
+.dropdownOption {
+  padding: 10px;
+  font-size: 0.8rem;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdownOption:hover {
+  background-color: #f0f0f0;
+}
+
+/* If you want to highlight focus in a custom way, you can do this: */
+.dropdownContainer:focus-visible {
+  border-radius: 20px;
+}
+
+.dropdownOption {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dropdownOption:hover,
+.highlighted {
+  background-color: #f0f0f0;
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+.customToast {
+  font-size: 0.8rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.customToast {
+  font-size: 0.85rem !important;
+}
+
+@media only screen and (min-width: 400px) {
+  .dropdownLabel {
+    font-size: 0.85rem;
+  }
+
+  .dropdownOption {
+    font-size: 0.85rem;
+  }
+
+  .customToast {
+    font-size: 0.85rem !important;
+  }
+}

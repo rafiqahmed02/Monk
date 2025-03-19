@@ -1,0 +1,199 @@
+.titleContainer {
+  position: relative !important;
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+}
+
+.addTvForm {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  max-width: 455px;
+  margin: 8px;
+  margin-top: 20px;
+  padding: 18px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background: white;
+}
+
+.tvformheading {
+  font-size: 1rem;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.step {
+  /* margin-bottom: 20px; */
+  font-size: small;
+}
+
+.stepText {
+  display: inline-block;
+  background: linear-gradient(270deg, rgba(242, 193, 78, 0) 0%, #ffe098 96.88%);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.step label {
+  display: block;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.appName {
+  text-decoration: underline;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.tooltipText {
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.step b {
+  color: #1d785a;
+  font-weight: bold;
+}
+
+.step input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #1b8368;
+  border-radius: 20px;
+}
+
+.inputWithIcon {
+  position: relative;
+}
+
+.inputWithIcon input {
+  width: 100%;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 10px;
+  background-color: #1b8368;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pairingPopup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: white;
+  width: 80%;
+  padding: 20px;
+  border-radius: 20px;
+  gap: 15px;
+}
+
+.pairingPopup p {
+  text-align: center;
+}
+
+.pairingPopup button {
+  width: 100%;
+  background: #ff7272;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  padding: 10px;
+}
+
+.noSpinInput::-webkit-outer-spin-button,
+.noSpinInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.noSpinInput {
+  -moz-appearance: textfield;
+  appearance: none;
+}
+@media (min-width: 1200px) {
+  .tooltipText {
+    font-size: 0.82rem;
+  }
+  .addTvForm {
+    max-width: 456px;
+  }
+}
+@media (min-width: 425px) {
+  .addTvForm {
+    margin: 20px auto;
+  }
+
+  .pairingPopup {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1740px) {
+  .addTvForm {
+    max-width: 53vmin;
+    margin: 2.5vmin auto;
+    font-family: "Arial", sans-serif;
+    padding: 2.5vmin;
+    border-radius: 2.5vmin;
+  }
+
+  .tvformheading {
+    font-size: 1.5vmin;
+    text-align: center;
+    margin: 1.5vmin 0;
+  }
+  .step {
+    font-size: 1.5vmin;
+  }
+
+  .step input {
+    width: 100%;
+    padding: 1.5vmin;
+    margin-bottom: 1.5vmin;
+    border: 1px solid #1b8368;
+    border-radius: 2.5vmin;
+    font-size: 1.5vmin;
+  }
+
+  .stepText {
+    padding: 0.5vmin 1vmin;
+    border-radius: 0.8vmin;
+  }
+
+  .step label {
+    margin-bottom: 1.5vmin;
+  }
+
+  .submitButton {
+    width: 100%;
+    padding: 1.5vmin;
+    border-radius: 2.5vmin;
+    font-size: 1.5vmin;
+  }
+
+  .pairingPopup {
+    width: 30vmin;
+    padding: 2vmin;
+    border-radius: 2vmin;
+    gap: 1.5vmin;
+  }
+
+  .pairingPopup button {
+    width: 100%;
+    border-radius: 2.5vmin;
+    padding: 1.5vmin;
+  }
+}

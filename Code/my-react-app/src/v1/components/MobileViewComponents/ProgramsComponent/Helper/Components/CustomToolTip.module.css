@@ -1,0 +1,9 @@
+.custom-tooltip
+  .MuiTooltip-tooltip
+  .MuiTooltip-touch
+  .MuiTooltip-tooltipPlacementBottom {
+  font-size: 5px !important;
+}
+.custom-tooltip {
+  font-size: 5px !important;
+}

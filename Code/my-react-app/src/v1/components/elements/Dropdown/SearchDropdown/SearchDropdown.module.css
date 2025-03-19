@@ -1,0 +1,206 @@
+.dropdownContainer {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.inputGroup {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #666;
+  border-radius: 25px;
+  background-color: #fff;
+  height: 43px;
+}
+
+.floatingLabel {
+  position: absolute;
+  top: 49%; /* Centered by default */
+  left: 30px;
+  transform: translateY(-50%); /* Center vertically */
+  transition: all 0.3s ease; /* Smooth transition for movement and font-size */
+  background-color: #fff;
+  padding: 0 5px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #666;
+  pointer-events: none; /* Allows clicks to pass through to the input below */
+  z-index: 2;
+}
+
+.input:focus + .floatingLabel,
+.input:not(:placeholder-shown) + .floatingLabel,
+.floatingLabel.active {
+  top: -10px; /* Move above the input field */
+  font-size: 0.75rem; /* Slightly reduce the font size */
+  transform: translateY(0%); /* Reset transform for stable position */
+}
+
+.input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 40px 10px 60px; /* Adjust padding for the icon and dropdown */
+  font-size: 1rem;
+  border-radius: 25px;
+  background: transparent;
+  color: #333; /* Darker color for text */
+}
+
+.icon {
+  position: absolute;
+  left: 15px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.clearIcon,
+.dropdownIcon {
+  position: absolute;
+  right: 15px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.dropdownIcon {
+  right: 15px;
+  cursor: pointer;
+}
+
+.clearIcon {
+  cursor: pointer;
+  right: 40px; /* Place it slightly left of the dropdown icon */
+}
+
+.inputError {
+  border-color: red;
+}
+
+.icon {
+  position: absolute;
+  left: 15px;
+  color: #545454;
+  font-size: 1rem;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 55px 10px 40px; /* Space for icon */
+  border: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  outline: none;
+}
+
+.dropdownIcon {
+  position: absolute;
+  right: 15px;
+  color: #545454;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  z-index: 10;
+  overflow: hidden;
+  transform-origin: top;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.optionsContainer {
+  border-radius: 10px 10px 0 0;
+  max-height: 160px; /* Adjust based on your preference */
+  overflow-y: auto; /* Ensures scrollbar is active when needed */
+  overflow-x: hidden; /* Prevents horizontal scrollbar */
+}
+
+.dropdown.open {
+  max-height: 200px; /* Adjust based on your preference */
+  opacity: 1;
+  overflow: visible; /* Ensures the footer is always visible */
+}
+
+.optionsContainer::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.optionsContainer::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Light grey track */
+}
+
+.optionsContainer::-webkit-scrollbar-thumb {
+  background-color: #1b8368; /* Thumb color */
+  border-radius: 10px; /* Rounded corners on the thumb */
+  border: 3px solid #f0f0f0; /* Creates a padding around the thumb */
+}
+
+.dropdown.close {
+  max-height: 0;
+  opacity: 0;
+}
+
+.dropdownOption {
+  padding: 10px;
+  font-size: 0.8rem;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdownOption:hover {
+  background-color: #f0f0f0;
+}
+
+.loading {
+  color: #1d785a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.noOption {
+  padding: 10px;
+  font-size: 0.8rem;
+  color: #999;
+  /* text-align: center; */
+}
+
+.footer {
+  padding: 10px;
+  font-weight: 500;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #ccc;
+  border-radius: 0 0 10px 10px;
+}
+
+.addMasjidLink {
+  font-size: 0.75rem;
+  color: #1d785a;
+  background: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.addMasjidLink:hover {
+  text-decoration: underline;
+}
+
+.dropdownOption:hover,
+.highlighted {
+  background-color: #f0f0f0;
+}
